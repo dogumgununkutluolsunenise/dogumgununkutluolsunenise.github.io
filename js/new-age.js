@@ -37,9 +37,9 @@
     return respvalue;
   }
 
-  
   const dateDiv = document.getElementById("date");
-  dateDiv.innerText = get_time_diff(new Date("2019-06-29 21:50"));
+  const ourDate = moment("2019-06-29 21:50","YYYY-MM-DD HH:mm").toDate();
+  dateDiv.innerText = get_time_diff(ourDate);
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
